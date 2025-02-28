@@ -14,7 +14,7 @@ Welcome to the Task Manager API. This API allows you to manage tasks with basic 
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/task-manager-api.git
+    git clone git@github.com:Brajesh825/Task-Management-Api-Task-.git
     ```
 2. Navigate to the project directory:
     ```sh
