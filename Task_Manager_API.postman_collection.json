@@ -1,0 +1,94 @@
+{
+    "info": {
+        "name": "Task Manager API",
+        "description": "Collection for testing the Task Manager API endpoints",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Get All Tasks",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/tasks",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "5000",
+                    "path": ["api", "v1", "tasks"]
+                }
+            }
+        },
+        {
+            "name": "Create Task",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/tasks",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "5000",
+                    "path": ["api", "v1", "tasks"]
+                },
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"title\": \"Sample Task\",\n    \"description\": \"This is a sample task\"\n}"
+                }
+            }
+        },
+        {
+            "name": "Get Single Task",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/tasks/1",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "5000",
+                    "path": ["api", "v1", "tasks", "1"]
+                }
+            }
+        },
+        {
+            "name": "Update Task",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/tasks/1",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "5000",
+                    "path": ["api", "v1", "tasks", "1"]
+                },
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"title\": \"Updated Task\",\n    \"description\": \"This task has been updated\",\n    \"completed\": true\n}"
+                }
+            }
+        },
+        {
+            "name": "Delete Task",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/tasks/1",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "5000",
+                    "path": ["api", "v1", "tasks", "1"]
+                }
+            }
+        }
+    ]
+} 
