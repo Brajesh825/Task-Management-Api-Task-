@@ -6,6 +6,7 @@ Welcome to the Task Manager API. This API allows you to manage tasks with basic 
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [Running Tests](#running-tests)
 - [API Endpoints](#api-endpoints)
 - [Error Handling](#error-handling)
 - [License](#license)
@@ -38,6 +39,11 @@ Welcome to the Task Manager API. This API allows you to manage tasks with basic 
     pip install -r requirements.txt
     ```
 
+6. Install pytest:
+    ```sh
+    pip install pytest
+    ```
+
 ## Usage
 
 1. Run the Flask application:
@@ -45,6 +51,13 @@ Welcome to the Task Manager API. This API allows you to manage tasks with basic 
     flask run
     ```
 2. The API will be available at `http://localhost:5000`.
+
+## Running Tests
+
+To run the tests, use the following command:
+```sh
+python -m pytest
+```
 
 ## API Endpoints
 
